@@ -1,0 +1,175 @@
+@import url('https:fonts.googleapis.com/css?family=Roboto:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;  
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #111 !important;
+  }
+  .main-contentf{
+    display: flex;
+    color: white!important;
+    background-color: #000;
+  }
+  .main-contentf .boxf{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .boxf h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+  }
+  .boxf .contentf{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .boxf .contentf:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+  }
+  .boxf .contentf:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+  }
+  .left .contentf p{
+    text-align: justify;
+  }
+  .left .contentf .social{
+    margin: 20px 0 0 0;
+  }
+  .left .contentf .social a{
+    padding: 0 2px;
+  }
+  .left .contentf .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .contentf .social a span:hover{
+    background: #f12020;
+  }
+  .center .contentf .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .contentf .fas:hover{
+    background: #f12020;
+  }
+  .center .contentf .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .contentf .phone{
+    margin: 15px 0;
+  }
+
+  .center .boxf{
+    text-align: left;
+  }
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form .msgForm{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+  }
+  .right form input:focus,
+  .right form .msgForm:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btnf{
+    margin-top: 10px;
+  }
+  .right form .btnf button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btnf button:hover{
+    background: #000;
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+  }
+  .bottom center span{
+    color: #656565;
+  }
+  .bottom center a{
+    color: #f12020;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+
+  .credit{
+    color: white;
+  }
+
+  .credit a{
+    color: red;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-contentf{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-contentf .boxf{
+      margin: 5px 0;
+    }
+  }
